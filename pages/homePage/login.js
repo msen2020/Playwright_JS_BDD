@@ -1,5 +1,5 @@
-class LoginPage
-{
+class LoginPage{
+
     constructor(page)
     {
         this.page= page
@@ -8,8 +8,7 @@ class LoginPage
         this.loginButton = ".submit-btn"
     }
 
-    async loginToApplication()
-    {
+    async login() {
         await this.page.fill(this.username,"admin@email.com")
         await this.page.fill(this.password,"admin@123")
         await this.page.click(this.loginButton)
